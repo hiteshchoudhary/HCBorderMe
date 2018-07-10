@@ -1,0 +1,16 @@
+PODS:
+  - HCBorderMe (0.1.0)
+
+DEPENDENCIES:
+  - HCBorderMe (from `../`)
+
+EXTERNAL SOURCES:
+  HCBorderMe:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HCBorderMe: f08b14ddc36aff70d8e615181d17d30e8fa52e32
+
+PODFILE CHECKSUM: d4c3a1ead41a1ecb74c1a215380a332452732f40
+
+COCOAPODS: 1.5.3

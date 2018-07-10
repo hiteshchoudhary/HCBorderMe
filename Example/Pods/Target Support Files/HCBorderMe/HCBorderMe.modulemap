@@ -1,0 +1,6 @@
+framework module HCBorderMe {
+  umbrella header "HCBorderMe-umbrella.h"
+
+  export *
+  module * { export * }
+}
