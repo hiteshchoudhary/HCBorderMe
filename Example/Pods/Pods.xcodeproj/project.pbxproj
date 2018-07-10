@@ -11,10 +11,10 @@
 		22D8DD0D084733076BE27F4409B4E6A0 /* Pods-HCBorderMe_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 902BCC7EF24644E6FAB5675FE01F91D7 /* Pods-HCBorderMe_Example-dummy.m */; };
 		2B48CABEACA99603C6ABF43BCE238FA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		389BC938F74496E0FDA112212E9FBB5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		3D0727A020F514FB00F7CB63 /* HCBorderMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D07279F20F514FB00F7CB63 /* HCBorderMe.swift */; };
 		63B7188BE90ADBC642B31EB2A9DA2438 /* Pods-HCBorderMe_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C04C0FB52EF302B839AE2CE3A4A4D49F /* Pods-HCBorderMe_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65F81AEAFDA51EE9FB1A3D3204C540C1 /* Pods-HCBorderMe_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38A3925CE59E1B0893349AAB0DB11978 /* Pods-HCBorderMe_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B71AF5BD40E49D8A2D3B38522C50365 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		BE14F1D5E859900C3009289DB5772D2B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45609FE81C0BFB8E828E1F9872196BF6 /* ReplaceMe.swift */; };
 		CA661D35A99AD007EDB77D3834EC752B /* Pods-HCBorderMe_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E8711D2A5B95EEF3F1A460AB4DF331 /* Pods-HCBorderMe_Tests-dummy.m */; };
 		EF63FAA314EC077A09DBA849A8260ABF /* HCBorderMe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 987091DD995B315A074B1BB1AF8DBCE1 /* HCBorderMe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -41,7 +41,7 @@
 		1B798DBFB5782C49EC0F376F885FA7F6 /* Pods_HCBorderMe_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCBorderMe_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		258ECEC26366D85FBF85296F14C9E942 /* Pods-HCBorderMe_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HCBorderMe_Tests-resources.sh"; sourceTree = "<group>"; };
 		38A3925CE59E1B0893349AAB0DB11978 /* Pods-HCBorderMe_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HCBorderMe_Tests-umbrella.h"; sourceTree = "<group>"; };
-		45609FE81C0BFB8E828E1F9872196BF6 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = HCBorderMe/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		3D07279F20F514FB00F7CB63 /* HCBorderMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HCBorderMe.swift; path = HCBorderMe/Classes/HCBorderMe.swift; sourceTree = "<group>"; };
 		554D7CE18F610B70CE60DE402B7EEA9A /* Pods-HCBorderMe_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HCBorderMe_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		56CB2D4583EAFEEA06B046EEBD69F67B /* Pods-HCBorderMe_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HCBorderMe_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -145,9 +145,9 @@
 		705A815313B25E1D27725D61C469A81F /* HCBorderMe */ = {
 			isa = PBXGroup;
 			children = (
-				45609FE81C0BFB8E828E1F9872196BF6 /* ReplaceMe.swift */,
 				A25A039684764C6D6082A2ACC46CA0E5 /* Pod */,
 				28642EEE6E9946A61F9188098D20BA98 /* Support Files */,
+				3D07279F20F514FB00F7CB63 /* HCBorderMe.swift */,
 			);
 			name = HCBorderMe;
 			path = ../..;
@@ -318,6 +318,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0940;
+				TargetAttributes = {
+					51401855F9DB7BD8B984CFD8557CCEBB = {
+						LastSwiftMigration = 0940;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -351,8 +356,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0727A020F514FB00F7CB63 /* HCBorderMe.swift in Sources */,
 				049EB01399BBBACE90DE9BA4EF877737 /* HCBorderMe-dummy.m in Sources */,
-				BE14F1D5E859900C3009289DB5772D2B /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E56EFBD25F61A18B0DEA22F498F3DB16 /* HCBorderMe.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -678,6 +684,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E56EFBD25F61A18B0DEA22F498F3DB16 /* HCBorderMe.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
