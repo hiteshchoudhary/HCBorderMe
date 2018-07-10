@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 'This pod was created to be published as a simple youtube demo. Goal for this project was to make sure that you are able to publish your own cocoapods. In terms of functionality, this pod is not very useful but certainly tutorial is.'
                        DESC
 
-  s.homepage         = 'https://github.com/Hitesh Choudhary/HCBorderMe'
+  s.homepage         = 'https://github.com/hiteshchoudhary/HCBorderMe'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Hitesh Choudhary' => 'hitesh@hiteshchoudhary.com' }
-  s.source           = { :git => 'https://github.com/Hitesh Choudhary/HCBorderMe.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/hiteshchoudhary/HCBorderMe.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
