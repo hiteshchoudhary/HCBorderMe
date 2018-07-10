@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HCBorderMe_Example' do
+  pod 'HCBorderMe', :path => '../'
+
+  target 'HCBorderMe_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
