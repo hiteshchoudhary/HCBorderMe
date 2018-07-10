@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HCBorderMe'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of HCBorderMe.'
+  s.summary          = 'This is just a demo cocoapod for youtube tutorial.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+'This pod was created to be published as a simple youtube demo. Goal for this project was to make sure that you are able to publish your own cocoapods. In terms of functionality, this pod is not very useful but certainly tutorial is.'
                        DESC
 
   s.homepage         = 'https://github.com/Hitesh Choudhary/HCBorderMe'
@@ -30,13 +30,13 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'HCBorderMe/Classes/**/*'
+  s.source_files = 'HCBorderMe/Classes/*.swift'
   
   # s.resource_bundles = {
   #   'HCBorderMe' => ['HCBorderMe/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
